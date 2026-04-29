@@ -14,10 +14,10 @@ const Icon = ({type})=>{
 
 export default function TransportIconRow({modes}){
   return (
-    <div className="flex items-center gap-3 text-[var(--accent)]">
+    <div className="flex items-center gap-3">
       {modes.map((m, i)=> (
         <div key={i} className="flex items-center gap-2">
-          <div className="w-8 h-8 flex items-center justify-center bg-white rounded-lg shadow-sm text-sm">
+          <div className="transport-icon">
             <Icon type={m} />
           </div>
         </div>
